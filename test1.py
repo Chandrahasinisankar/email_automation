@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 def send_email(subject, body, to_email, app_password, attachment_path):
-    email = 'sankarchandrahasini@gmail.com'
+    email = 'from_mail'
     message = MIMEMultipart()
     message['From'] = email
     message['To'] = to_email
@@ -29,7 +29,7 @@ def send_email(subject, body, to_email, app_password, attachment_path):
         except smtplib.SMTPException as e:
             print(f"SMTP Exception: {e}")
 
-app_password = "iyyz zjym xvib cygy" 
+app_password = "app password" 
 subject = input("enter subject : ")
 body = input("enter body : ")
 recipient_email = input("enter a valid mail id : ")  
